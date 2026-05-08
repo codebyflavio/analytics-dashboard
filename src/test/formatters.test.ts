@@ -43,8 +43,8 @@ describe("formatPercentage", () => {
     expect(formatPercentage(-0.8)).toBe("-0.8%");
   });
 
-  it("formats zero", () => {
-    expect(formatPercentage(0)).toBe("+0.0%");
+  it("formats zero without sign", () => {
+    expect(formatPercentage(0)).toBe("0.0%");
   });
 
   it("respects custom decimal places", () => {
